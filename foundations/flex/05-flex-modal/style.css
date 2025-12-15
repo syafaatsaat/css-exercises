@@ -15,11 +15,35 @@ body {
   justify-content: center;
 }
 
+.modal, .content, .header, .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header > p {
+  margin-top: 0;
+  margin-bottom: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 20px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .icon {
@@ -33,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
